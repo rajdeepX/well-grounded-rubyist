@@ -19,12 +19,3 @@ end
 
 puts "This is a #{pass.event} pass,that is to be hosted in #{pass.venue}.\nGrab yours just for Rs.#{"%.2f" %pass.price}. \nRemember the date - #{pass.date}."
 
-
-
-
-
-
-
-
-
-
