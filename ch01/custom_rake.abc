@@ -1,4 +1,4 @@
 desc "This is a custom rake"
 task :hello do
-puts "Hi there, I am a custom rake being called"
+    puts "Hi there, I am a custom rake being called"
 end

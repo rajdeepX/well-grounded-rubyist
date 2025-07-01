@@ -1,9 +1,9 @@
 obj = Object.new
 
 def obj.add(a,b)
-c = a + b
-print c 
-puts " is the added value."
+    c = a + b
+    print c 
+    puts " is the added value."
 end
 
 print "Type your first num: "

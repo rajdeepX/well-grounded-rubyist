@@ -1,7 +1,7 @@
 namespace :admin do
-desc "This is just a greeting dude!"
-task :hello do
-puts "Hello World!"
-end
+    desc "This is just a greeting dude!"
+    task :hello do
+        puts "Hello World!"
+    end
 end
 
