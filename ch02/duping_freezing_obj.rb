@@ -9,3 +9,7 @@ puts s1
 s2 = "This is another original"
 puts change_str(s2.dup)
 puts s2
+
+s3 = "This is freezed"
+s3.freeze
+puts change_str(s3) # FrozenError
