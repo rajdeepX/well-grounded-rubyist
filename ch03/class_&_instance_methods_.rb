@@ -14,6 +14,10 @@ class Temperature
     def Temperature.f2c(c)
         (c - 32) * 5 / 9.0
     end
+
+    def Temperature.say_hello
+        puts "Hello"
+    end
 end
 
 t = Temperature.new
@@ -25,3 +29,18 @@ puts "---"
 
 puts Temperature.c2f(55)
 puts Temperature.f2c(200)
+puts "---"
+Temperature.say_hello
+
+if t.respond_to?("say_hello")
+    t.say_hello
+else
+    puts "Not valid method!"
+end
+
+
+class A < Temperature
+end
+
+A.say_hello
+puts A.c2f(55)
