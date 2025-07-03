@@ -1,12 +1,12 @@
 class Publication
-    attr_accessor :publisher
+  attr_accessor :publisher
 
-    def article_type
-        "Magazine"
-    end
+  def article_type
+    "Magazine"
+  end
 end
 class Magazine < Publication
-    attr_accessor :editor
+  attr_accessor :editor
 end
 
 m = Magazine.new
