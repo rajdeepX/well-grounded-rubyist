@@ -1,4 +1,7 @@
 class Temperature
+
+    Degree = ["Celsius", "Fahrenheit"]
+
     def c2f(f)
         f * 9.0 / 5 + 32
     end
@@ -44,3 +47,5 @@ end
 
 A.say_hello
 puts A.c2f(55)
+puts "---"
+puts Temperature::Degree
