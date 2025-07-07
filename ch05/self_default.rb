@@ -16,3 +16,4 @@ c.name = "Yes"
 c.model = "GR"
 
 puts c.full_name
+
