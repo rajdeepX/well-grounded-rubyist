@@ -1,16 +1,16 @@
-class C
-  puts "this is self #{self}"
-  puts "#{self.object_id}"
-  def self.bark
-    puts "from bark #{self}"
-    puts "#{self.object_id}"
-  end
+# class C
+#   puts "this is self #{self}"
+#   puts "#{self.object_id}"
+#   def self.bark
+#     puts "from bark #{self}"
+#     puts "#{self.object_id}"
+#   end
   
-  def move
-    puts "from move #{self}"
-    puts "#{self.object_id}"
-  end
-end
+#   def move
+#     puts "from move #{self}"
+#     puts "#{self.object_id}"
+#   end
+# end
 
 
 
@@ -43,24 +43,33 @@ end
 # D.x
 
 
-class F
-  def F.walk
-    puts "I am walking"
-  end
+# class F
+#   def F.walk
+#     puts "I am walking"
+#   end
 
-  walk
+#   walk
 
-  def x
-    puts "this is x"
-  end
+#   def x
+#     puts "this is x"
+#   end
 
-  def y
-    puts "this is y"
-    x
-  end
+#   def y
+#     puts "this is y"
+#     x
+#   end
   
+# end
+
+# F.walk
+# p = F.new
+# p.y
+
+obj = Object.new
+
+def obj.show
+  puts "This is inside singleton method: self is: #{self}"
 end
 
-F.walk
-p = F.new
-p.y
+obj.show
+puts "This is now called directly by : #{obj}"

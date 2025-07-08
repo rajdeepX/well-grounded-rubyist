@@ -1,38 +1,52 @@
-class Dog
-  @@total_dogs = 0
+# class Dog
+#   @@total_dogs = 0
 
-  def initialize(name)
-    @name = name
-    @@total_dogs +=1
-  end
+#   def initialize(name)
+#     @name = name
+#     @@total_dogs +=1
+#   end
 
-  def self.dog_name
-    @name
-  end
+#   def self.dog_name
+#     @name
+#   end
 
-  def show_name
-    @name
-  end
+#   def show_name
+#     @name
+#   end
 
-  def show_total
-    @@total_dogs
-  end
+#   def show_total
+#     @@total_dogs
+#   end
 
-  def increment_total
-    @@total_dogs +=1
-  end
+#   def increment_total
+#     @@total_dogs +=1
+#   end
+# end
+
+# d1 = Dog.new("harry")
+# d2 = Dog.new("potter")
+
+# Dog.dog_name
+
+# puts d1.show_name
+# puts d2.show_name
+
+# puts d1.show_total
+# d1.increment_total
+
+# puts d1.show_total
+# puts d2.show_total
+
+# --------------
+
+class Parent
+  @@value = 100
 end
 
-d1 = Dog.new("harry")
-d2 = Dog.new("potter")
+class Child < Parent
+  @@value = 500
+end
 
-Dog.dog_name
-
-puts d1.show_name
-puts d2.show_name
-
-puts d1.show_total
-d1.increment_total
-
-puts d1.show_total
-puts d2.show_total
+class Parent
+  puts @@value
+end

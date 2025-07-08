@@ -27,11 +27,12 @@ class Violin
   end
 
   def history
-    ::String.new("EA Sports")
+    puts String.new("EA Sports")
   end
 end
 
 c = Violin.new
 
-puts c.history.class
-puts c.instance_variable_get(:@e).class 
+c.history
+# puts c.history.class
+# puts c.instance_variable_get(:@e).class 
